@@ -1,0 +1,16 @@
+def perfsqs(n : int) -> dict[int, int]:
+        dict_ps={}
+        for val in range(1,n +1):
+                dict_ps(val) = val **2
+
+        return dict_ps
+#28. Write a function that takes a dictionary of perfect squares and deletes all pairs in which keys are a multiple of 3. For
+#example, taking { 1 : 1, 2 : 4, 3 : 9 } results in { 1 : 1, 2 : 4 }. Can dictionary comprehension be used
+#here?
+def del_3s(dict):
+        for value in dict:
+                if value % 3 ==0:
+                        del dict[value]
+
+persq = perfsqs(100)
+assert del_3s(persq)

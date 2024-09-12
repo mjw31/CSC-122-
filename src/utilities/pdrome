@@ -1,0 +1,14 @@
+def pdrome(s : str) -> bool:
+    #init
+    forward_ind=0
+    back_ind = len(s) -1
+    for (index, letter) in enumerate(s):
+        #body
+        if letter != s[-index -1]:
+            return False
+    return True
+assert pdrome("")
+assert pdrome("racecar")
+assert pdrome("i")
+assert pdrome("abcdefpshgfedcba")
+assert pdrome 
